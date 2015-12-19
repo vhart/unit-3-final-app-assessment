@@ -17,6 +17,11 @@
 		8D8753101C24774800BBD328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D87530F1C24774800BBD328 /* Assets.xcassets */; };
 		8D8753131C24774800BBD328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8753111C24774800BBD328 /* LaunchScreen.storyboard */; };
 		8DA03F741C2499F400328B53 /* C4QCatFactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */; };
+		C771B2D01C25C3EB0049C9DD /* C4QCatFactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2CE1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.m */; };
+		C771B2D11C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C771B2CF1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib */; };
+		C771B2D41C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2D31C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m */; };
+		C771B2D91C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */; };
+		C771B2DC1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */; };
 		DD8FD6DEC146B4B1C1F45D98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44461502C751D156694EAA4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,15 @@
 		8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QCatFactsDetailViewController.h; sourceTree = "<group>"; };
 		8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QCatFactsDetailViewController.m; sourceTree = "<group>"; };
 		A44461502C751D156694EAA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C771B2CD1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QCatFactsTableViewCell.h; sourceTree = "<group>"; };
+		C771B2CE1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QCatFactsTableViewCell.m; sourceTree = "<group>"; };
+		C771B2CF1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = C4QCatFactsTableViewCell.xib; sourceTree = "<group>"; };
+		C771B2D21C25C7CC0049C9DD /* C4QCatFactsFetchingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QCatFactsFetchingModel.h; sourceTree = "<group>"; };
+		C771B2D31C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QCatFactsFetchingModel.m; sourceTree = "<group>"; };
+		C771B2D71C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QSavedCatFactsTableViewController.h; sourceTree = "<group>"; };
+		C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QSavedCatFactsTableViewController.m; sourceTree = "<group>"; };
+		C771B2DA1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QGiphyCatPictureFetch.h; sourceTree = "<group>"; };
+		C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QGiphyCatPictureFetch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +108,16 @@
 		8D8753021C24774700BBD328 /* unit-3-final-app-assessment */ = {
 			isa = PBXGroup;
 			children = (
+				C771B2D61C25F1120049C9DD /* Model */,
+				C771B2D51C25EFC50049C9DD /* CatFactsTableView */,
 				8D8753061C24774700BBD328 /* AppDelegate.h */,
 				8D8753071C24774700BBD328 /* AppDelegate.m */,
 				8D610E9C1C2477EB00AADDC2 /* C4QViewController.h */,
 				8D610E9D1C2477EB00AADDC2 /* C4QViewController.m */,
 				8D610E961C2477EB00AADDC2 /* C4QColorPickerViewController.h */,
 				8D610E971C2477EB00AADDC2 /* C4QColorPickerViewController.m */,
-				8D610E941C2477EB00AADDC2 /* C4QCatFactsTableViewController.h */,
-				8D610E951C2477EB00AADDC2 /* C4QCatFactsTableViewController.m */,
+				C771B2D71C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.h */,
+				C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */,
 				8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */,
 				8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */,
 				8D87530C1C24774700BBD328 /* Main.storyboard */,
@@ -121,6 +137,29 @@
 				8D8753041C24774700BBD328 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C771B2D51C25EFC50049C9DD /* CatFactsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8D610E941C2477EB00AADDC2 /* C4QCatFactsTableViewController.h */,
+				8D610E951C2477EB00AADDC2 /* C4QCatFactsTableViewController.m */,
+				C771B2CD1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.h */,
+				C771B2CE1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.m */,
+				C771B2CF1C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib */,
+			);
+			name = CatFactsTableView;
+			sourceTree = "<group>";
+		};
+		C771B2D61C25F1120049C9DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C771B2D21C25C7CC0049C9DD /* C4QCatFactsFetchingModel.h */,
+				C771B2D31C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m */,
+				C771B2DA1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.h */,
+				C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8753131C24774800BBD328 /* LaunchScreen.storyboard in Resources */,
+				C771B2D11C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib in Resources */,
 				8D8753101C24774800BBD328 /* Assets.xcassets in Resources */,
 				8D87530E1C24774700BBD328 /* Main.storyboard in Resources */,
 			);
@@ -245,11 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8753081C24774700BBD328 /* AppDelegate.m in Sources */,
+				C771B2D01C25C3EB0049C9DD /* C4QCatFactsTableViewCell.m in Sources */,
 				8D610EA01C2477EB00AADDC2 /* C4QCatFactsTableViewController.m in Sources */,
 				8D8753051C24774700BBD328 /* main.m in Sources */,
 				8DA03F741C2499F400328B53 /* C4QCatFactsDetailViewController.m in Sources */,
+				C771B2DC1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m in Sources */,
 				8D610EA41C2477EB00AADDC2 /* C4QViewController.m in Sources */,
 				8D610EA11C2477EB00AADDC2 /* C4QColorPickerViewController.m in Sources */,
+				C771B2D91C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m in Sources */,
+				C771B2D41C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m in Sources */,
 				8D610EA21C2477EB00AADDC2 /* C4QRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "unit-3-final-app-assessment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.unit-3-final-app-assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "unit-3-final-app-assessment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.unit-3-final-app-assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
