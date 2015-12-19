@@ -8,6 +8,7 @@
 
 #import "C4QSavedCatFactsTableViewController.h"
 #import "C4QCatFactsDetailViewController.h"
+#import "C4QSavedFactsTableViewCell.h"
 
 @interface C4QSavedCatFactsTableViewController ()
 
@@ -19,6 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"C4QSavedFactsTableViewCell" bundle:nil] forCellReuseIdentifier:@"SavedFactsCell"];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 160.0;
+
     [self getSavedCatFacts];
 }
 
@@ -43,11 +49,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SavedFactCell" forIndexPath:indexPath];
+    C4QSavedFactsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SavedFactsCell" forIndexPath:indexPath];
     
     // Configure the cell...
 
-    cell.textLabel.text = self.savedFacts[indexPath.row];
+    cell.savedFactLabel.text = self.savedFacts[indexPath.row];
 
     return cell;
 }

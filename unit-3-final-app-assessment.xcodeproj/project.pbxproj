@@ -22,6 +22,8 @@
 		C771B2D41C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2D31C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m */; };
 		C771B2D91C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */; };
 		C771B2DC1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */; };
+		C771B2E11C26174D0049C9DD /* C4QSavedFactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B2DF1C26174D0049C9DD /* C4QSavedFactsTableViewCell.m */; };
+		C771B2E21C26174D0049C9DD /* C4QSavedFactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C771B2E01C26174D0049C9DD /* C4QSavedFactsTableViewCell.xib */; };
 		DD8FD6DEC146B4B1C1F45D98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44461502C751D156694EAA4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,9 @@
 		C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QSavedCatFactsTableViewController.m; sourceTree = "<group>"; };
 		C771B2DA1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QGiphyCatPictureFetch.h; sourceTree = "<group>"; };
 		C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QGiphyCatPictureFetch.m; sourceTree = "<group>"; };
+		C771B2DE1C26174D0049C9DD /* C4QSavedFactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QSavedFactsTableViewCell.h; sourceTree = "<group>"; };
+		C771B2DF1C26174D0049C9DD /* C4QSavedFactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QSavedFactsTableViewCell.m; sourceTree = "<group>"; };
+		C771B2E01C26174D0049C9DD /* C4QSavedFactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = C4QSavedFactsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 		8D8753021C24774700BBD328 /* unit-3-final-app-assessment */ = {
 			isa = PBXGroup;
 			children = (
+				C771B2DD1C2616FF0049C9DD /* SavedFactTableViewController */,
 				C771B2D61C25F1120049C9DD /* Model */,
 				C771B2D51C25EFC50049C9DD /* CatFactsTableView */,
 				8D8753061C24774700BBD328 /* AppDelegate.h */,
@@ -116,8 +122,6 @@
 				8D610E9D1C2477EB00AADDC2 /* C4QViewController.m */,
 				8D610E961C2477EB00AADDC2 /* C4QColorPickerViewController.h */,
 				8D610E971C2477EB00AADDC2 /* C4QColorPickerViewController.m */,
-				C771B2D71C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.h */,
-				C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */,
 				8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */,
 				8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */,
 				8D87530C1C24774700BBD328 /* Main.storyboard */,
@@ -160,6 +164,18 @@
 				C771B2DB1C25F8A20049C9DD /* C4QGiphyCatPictureFetch.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C771B2DD1C2616FF0049C9DD /* SavedFactTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C771B2D71C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.h */,
+				C771B2D81C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m */,
+				C771B2DE1C26174D0049C9DD /* C4QSavedFactsTableViewCell.h */,
+				C771B2DF1C26174D0049C9DD /* C4QSavedFactsTableViewCell.m */,
+				C771B2E01C26174D0049C9DD /* C4QSavedFactsTableViewCell.xib */,
+			);
+			name = SavedFactTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +242,7 @@
 				C771B2D11C25C3EB0049C9DD /* C4QCatFactsTableViewCell.xib in Resources */,
 				8D8753101C24774800BBD328 /* Assets.xcassets in Resources */,
 				8D87530E1C24774700BBD328 /* Main.storyboard in Resources */,
+				C771B2E21C26174D0049C9DD /* C4QSavedFactsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +311,7 @@
 				8D610EA11C2477EB00AADDC2 /* C4QColorPickerViewController.m in Sources */,
 				C771B2D91C25F14B0049C9DD /* C4QSavedCatFactsTableViewController.m in Sources */,
 				C771B2D41C25C7CC0049C9DD /* C4QCatFactsFetchingModel.m in Sources */,
+				C771B2E11C26174D0049C9DD /* C4QSavedFactsTableViewCell.m in Sources */,
 				8D610EA21C2477EB00AADDC2 /* C4QRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
