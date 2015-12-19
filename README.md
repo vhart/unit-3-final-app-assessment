@@ -2,13 +2,13 @@
 
 This part of the assessment contains 5 screens
 
-**Screen 1**
+**Screen 1**  
 This screen contains two buttons, one visible and one hidden. 
 *Requirements*
 * Conform to the protocol created in screen 2 and implement all required methods. 
 * Segue to screen 3 (via the hidden button)
 
-**Screen 2**
+**Screen 2**  
 This screen contains three buttons: red, green, and blue.
 
 *Requirements*
@@ -20,7 +20,7 @@ This screen contains three buttons: red, green, and blue.
   ** When the delegate (screen 1) receives a color, it should set its view's background color. When the correct color is selected the 
   hidden button will appear **
 
-**Screen 3**
+**Screen 3**  
 This screen is nothing more than a `UITableViewController`. 
 
 *Requirements*
@@ -33,7 +33,7 @@ This screen is nothing more than a `UITableViewController`.
 * Present an alert whenever you save a cat fact
 * Change the + button to a checkmark indicating that a fact is already saved
 
-**Screen 4**  
+**Screen 4**   
 This is a very basic `UITableViewController`. Nothing more.
 
 *Requirements*
